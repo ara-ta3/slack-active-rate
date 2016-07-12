@@ -1,3 +1,6 @@
 package: .
 import:
 - package: github.com/nlopes/slack
+- package: bitbucket.org/liamstask/goose
+  subpackages:
+  - cmd/goose

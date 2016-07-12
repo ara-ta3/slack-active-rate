@@ -1,0 +1,22 @@
+
+test:
+    driver: mymysql
+    open: user=root dbname=darktest sslmode=disable
+
+development:
+    driver: mymysql
+    open: user=dark dbname=darkdev sslmode=disable
+    
+production:
+    driver: mymysql
+    open: user=dark dbname=dark sslmode=verify-full
+
+customimport:
+    driver: customdriver
+    open: customdriver open
+    import: github.com/custom/driver
+    dialect: mysql
+
+environment_variable_config:
+    driver: $DB_DRIVER
+    open: $DATABASE_URL

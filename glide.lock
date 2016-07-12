@@ -1,6 +1,14 @@
-hash: dbfda30cb3f762261ce4703790117efe6d9707f702675b57da046d269d9444df
-updated: 2016-07-12T21:48:49.994718554+09:00
+hash: da36a1f3c51172f340c788304ea8a2a756ab3b3854c38be087708383643c84e9
+updated: 2016-07-12T22:36:44.236048903+09:00
 imports:
+- name: bitbucket.org/liamstask/goose
+  version: 8488cc47d90c8a502b1c41a462a6d9cc8ee0a895
+  subpackages:
+  - cmd/goose
 - name: github.com/nlopes/slack
   version: 4feee83bb2b31d790977ce727a028c6a542c72c7
+- name: golang.org/x/net
+  version: f841c39de738b1d0df95b5a7187744f0e03d8112
+  subpackages:
+  - websocket
 devImports: []
